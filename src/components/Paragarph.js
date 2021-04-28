@@ -4,7 +4,7 @@ class Paragarph extends Component {
   render() {
     return (
       <div>
-        <p>{this.props.copy}</p>
+        <p className={this.props.class}>{this.props.copy}</p>
       </div>
     );
   }

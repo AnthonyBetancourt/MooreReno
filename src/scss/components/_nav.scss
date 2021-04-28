@@ -1,10 +1,9 @@
 header {
   display: grid;
-  grid-template-columns: 75px auto;
+  grid-template-columns: fit-content(100%) auto;
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  border-bottom: solid 1px #000000;
 }
 
 .logo {
@@ -12,6 +11,18 @@ header {
   img {
     display: block;
     width: 100%;
+  }
+  .title {
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 0.25rem;
+      font-weight: 700;
+    }
+    h5 {
+      font-size: 1.25rem;
+      font-weight: 300;
+      margin-bottom: 0;
+    }
   }
 }
 

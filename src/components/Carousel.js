@@ -17,22 +17,22 @@ export default class Carousel extends Component {
         <h2>{this.props.title}</h2>
         <Slider {...settings}>
           <div>
-            <img src="https://via.placeholder.com/450/000000/FFFFFF/?text=Gallery+Image+1" alt=""/>
+            <img src={"images/kitchen-samples-1.jpg"} alt="Sample Kitchen 1"/>
           </div>
           <div>
-          <img src="https://via.placeholder.com/450/000000/FFFFFF/?text=Gallery+Image+2" alt=""/>
+          <img src={"images/kitchen-samples-2.jpg"} alt="Sample Kitchen 2"/>
           </div>
           <div>
-          <img src="https://via.placeholder.com/450/000000/FFFFFF/?text=Gallery+Image+3" alt=""/>
+          <img src={"images/kitchen-samples-3.jpg"} alt="Sample Kitchen 3"/>
           </div>
           <div>
-          <img src="https://via.placeholder.com/450/000000/FFFFFF/?text=Gallery+Image+4" alt=""/>
+          <img src={"images/kitchen-samples-4.jpg"} alt="Sample Kitchen 4"/>
           </div>
           <div>
-          <img src="https://via.placeholder.com/450/000000/FFFFFF/?text=Gallery+Image+5" alt=""/>
+          <img src={"images/kitchen-samples-1.jpg"} alt="Sample Kitchen 1"/>
           </div>
           <div>
-          <img src="https://via.placeholder.com/450/000000/FFFFFF/?text=Gallery+Image+6" alt=""/>
+          <img src={"images/kitchen-samples-2.jpg"} alt="Sample Kitchen 2"/>
           </div>
         </Slider>
       </div>

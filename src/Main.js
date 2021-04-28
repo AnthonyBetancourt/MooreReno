@@ -3,10 +3,10 @@ import {
   Route,
   HashRouter
 } from "react-router-dom";
-import Nav from "./Nav";
-import Home from "./Home";
-import Services from "./Services";
-import Contact from "./Contact";
+import Nav from "./components/Nav";
+import Home from "./pages/Home";
+import Services from "./pages/Services";
+import Contact from "./pages/Contact";
  
 class Main extends Component {
   render() {
@@ -16,8 +16,8 @@ class Main extends Component {
           <Nav/>
           <main className="content">
             <Route exact path="/" component={Home}/>
-            <Route path="/services" component={Services}/>
-            <Route path="/contact" component={Contact}/>
+            <Route path="/pages/services" component={Services}/>
+            <Route path="/pages/contact" component={Contact}/>
           </main>
         </div>
       </HashRouter>

@@ -83,6 +83,7 @@ img {
 @import './components/carousel';
 @import './components/nav';
 @import './components/tile';
+@import './components/layout';
 
 .slick-slide img {
   width: 100%;
@@ -93,18 +94,21 @@ img {
   flex-direction: column;
 }
 
-.tile {
-  background: grey;
-  border-bottom: 1px;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-  display: flex;
-  &:nth-child(2) {
-    & > .tile--img {
-      order: 1;
-    }
-  }
-  &--img {
-    flex: 1 1 350px;
+p {
+  margin-bottom: 1rem;
+  line-height: 25px;
+}
+
+.center {
+  text-align: center;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+.home-page--carousel {
+  h2 {
+    display: none;;
   }
 }
