@@ -1,0 +1,10 @@
+.tile {
+  display: flex;
+  &--content {
+    border: 1px solid gray;
+    padding: 1rem;
+  }
+  h5 {
+    margin-bottom: 0.5rem;
+  }
+}

@@ -1,0 +1,110 @@
+// rough reset
+@import 'reset';
+
+// @import '../components/*.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap');
+
+:root {
+  --fontHeadings: 'Source Sans Pro', sans-serif;
+  --fontBodyCopy: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--fontBodyCopy);
+  #root {
+    > div {
+      display: flex;
+      flex-flow: column wrap;
+    }
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--fontHeadings);
+  margin-bottom: 2rem;
+}
+
+h1 {
+  font-size: 96px;
+}
+
+h2 {
+  font-size: 60px;
+}
+
+h3 {
+  font-size: 48px;
+}
+
+h4 {
+  font-size: 34px;
+}
+
+h5 {
+  font-size: 24px;
+}
+
+h6 {
+  font-size: 20px;
+}
+
+main {
+  > div {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+}
+
+ul {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+
+h3 {
+  color: black;
+}
+
+img { 
+  display: block;
+  width: 100%;
+}
+
+@import './components/carousel';
+@import './components/nav';
+@import './components/tile';
+
+.slick-slide img {
+  width: 100%;
+}
+
+.services--content {
+  display: flex;
+  flex-direction: column;
+}
+
+.tile {
+  background: grey;
+  border-bottom: 1px;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  display: flex;
+  &:nth-child(2) {
+    & > .tile--img {
+      order: 1;
+    }
+  }
+  &--img {
+    flex: 1 1 350px;
+  }
+}

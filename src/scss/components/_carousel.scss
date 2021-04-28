@@ -1,0 +1,72 @@
+// Carousel CSS
+.home-page--carousel {
+  --carouselHeight: 500px;
+  --slickDotsHeight: 53px;
+  --slickDotsPadding: 1rem;
+  --slickArrowSpacing: 1rem;
+}
+
+.slick {
+  &-slider {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // Padding bottom = slick-dots height
+    padding-bottom: var(--slickDotsHeight);
+    // Fixed height for layout only - REMOVE
+    height: var(--carouselHeight);
+  }
+  &-list {
+    height: 100%;
+  }
+  &-track {
+    height: 100%;
+  }
+  &-slide {
+    > div {
+      height: 100%;
+      > div {
+        height: 100%;
+      }
+    }
+    img {
+      height: 100%;
+    }
+  }
+  &-arrow {
+    position: absolute;
+    z-index: 999;
+  }
+  &-prev {
+    left: 0;
+    margin-left: var(--slickArrowSpacing);
+  }
+  &-next {
+    right: 0;
+    margin-right: var(--slickArrowSpacing);
+  }
+  &-dots {
+    width: 100%;
+    flex-basis: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex !important; // !important needed to override slick.js CSS
+    justify-content: center;
+    align-items: center;
+    padding: var(--slickDotsPadding);
+    li {
+      button {
+        background-color: transparent;
+        border: none;
+        padding: 0.25rem;
+      }
+      &.slick-active {
+        background: darkgray;
+        button {
+          color: white;
+        }
+      }
+    }
+  }
+}
